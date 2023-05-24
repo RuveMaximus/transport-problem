@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Транспортная задача</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Транспортная задача</h1>
+
+    <label for="supply">Количество поставщиков</label>
+    <select id="supply">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <br>
+
+    <label for="demand">Количество потребителей</label>
+    <select id="demand">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <br><br>
+    <button id="step-1-btn">Дальше</button>
+    <div id="inputTableContainer"></div>
+
+    <select id="method">
+        <option value="nw-corner">Метод северо-западного угла</option>
+        <option value="min-element">Метод минимального элемента</option>
+    </select>
+
+    <button id="calc-btn" style="display: none;">Расчитать</button>
+    <div id="result"></div>
+</body>
+</html>
